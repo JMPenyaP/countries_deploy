@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+.container {
+   font-family: 'poppins', sans-serif;
+   color: #2a68ff;
+   border: 1px solid #e1e1e1;
+   border-radius: 12px;
+   padding: 16px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   background-color: #ffffff;
+   text-align: center;
+   width: calc(90% - 40px);
+   /* Ancho del 25% y se resta el margen */
+   margin: 10px auto;
+   transition: transform 0.2s ease-in-out;
+   flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
+   /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+   justify-content: space-between;
+   /* Espacio entre las columnas */
+   align-items: flex-start;
+   /* Alinea los elementos en la parte superior */
+}
+
+.column,
+.column2,
+.column3 {
+   flex-basis: calc(33% - 10px);
+   /* Ancho del 50% menos los márgenes entre las columnas */
+   margin: 5px;
+   /* Márgenes entre las columnas */
+   box-sizing: border-box;
+   /* Incluye el padding y borde en el tamaño total */
+}
+
+.column {
+   /* flex: 1; */
+   /* Distribuye el espacio disponible de manera equitativa entre las columnas */
+   padding: 20px;
+   /* Espacio interno para separar el contenido */
+}
+
+.column2 {
+   text-align: left;
+   /*  flex: 1; */
+   /* Distribuye el espacio disponible de manera equitativa entre las columnas */
+   padding: 20px;
+   /* Espacio interno para separar el contenido */
+   border: 1px solid #ccc;
+   border-radius: 12px;
+}
+
+.column3 {
+   text-align: left;
+   /*  flex: 1; */
+   /* Distribuye el espacio disponible de manera equitativa entre las columnas */
+   padding: 20px;
+   /* Espacio interno para separar el contenido */
+   border: 1px solid #ccc;
+   border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+
+   .column,
+   .column2,
+   .column3 {
+      flex-basis: 100%;
+      /* Ancho completo en pantallas pequeñas */
+      margin: 10px 0;
+      /* Margen superior e inferior en pantallas pequeñas */
+   }
+}
+
+/* .container:hover {
+   transform: scale(1.05);
+} */
+
+.column img {
+   max-width: 90%;
+   /* La imagen ocupará como máximo el ancho del contenedor */
+   border: 1px #2a68ff solid;
+   height: auto;
+   /* El alto se ajustará automáticamente para mantener la proporción */
+   overflow: hidden;
+   /* Asegura que la imagen no se desborde del círculo */
+}
+
+.title {
+   background-color: #2a68ff;
+   border-radius: 12px;
+   text-align: center;
+   font-family: 'poppins', sans-serif;
+   color: #ffffff;
+   margin: auto 40px;
+   padding: 10px 0;
+}
+
+h2 {
+   margin: 0;
+   font-size: 1.5rem;
+}
+
+.backButton {
+   font-family: 'poppins', sans-serif;
+   font-size: large;
+   color: #2a68ff;
+   background-color: #ffffff;
+   padding: 10px 30px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+   text-decoration: none;
+}
+
+.container a,
+.backButton a,
+:hover {
+   text-decoration: none;
+}
+
+
+/* Estilos para el botón al pasar el cursor sobre él */
+.backButton:hover {
+   background-color: #2a68ff;
+   /* Cambio de color de fondo en hover */
+   color: #ffffff;
+   /* Cambio de color de texto en hover */
+
+}
+
+.buttonContainer {
+   background-color: #aeaeae;
+   border-radius: 12px;
+   text-align: center;
+   padding: 10px 0;
+   margin: auto 40px;
+}
